@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 1px solid grey; 
+    /* top right bottom left */
+    padding: 5px 0 0 5px;
+}
+
+/*
+.navTitle {
+    font-size: 35px;
+}
+*/
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 10px 3px 10px;
+}
+
