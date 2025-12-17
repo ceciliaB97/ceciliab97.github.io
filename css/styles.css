@@ -1,27 +1,78 @@
 body {
-    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
+header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
     border-bottom: 1px solid grey; 
     /* top right bottom left */
-    padding: 5px 0 0 5px;
+    padding: 10px 0 0 0;
 }
 
-/*
-.navTitle {
-    font-size: 35px;
+header nav {
+    display: flex;
+    align-self: flex-end;
 }
-*/
 
-nav a {
-    display: inline-block;
+header h1 {
+    align-self: flex-end;
+}
+
+header nav a {
+    /* top right bottom left */
+    padding: 0 15px 0 15px;
     text-decoration: none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 3px 10px 3px 10px;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* posicion */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    /*decoracion*/
+    border-top: 1px solid grey; 
+}
+
+footer span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
+    /*espaciado*/
+    /* top right bottom left */
+    padding: 0 0 10px 0;
+}
+
+footer span a {
+    /*texto*/
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /*alineado*/
+    margin: auto;
+    width: 75%;
+}
+
+section div {
+    border: 1px solid grey;
+    border-radius: 15%;
+    /* top right bottom left */
+    padding: 20px;
+    margin: 5px;
+}
