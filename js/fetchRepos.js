@@ -1,15 +1,34 @@
 import { Octokit } from "@octokit/core";
-import fs from 'node:fs';
+import fs from "fs";
 
 const octokit = new Octokit({
-  auth: process.env.MY_GITHUB_TOKEN 
-});
+  auth: process.env.GITHUBPAGE_TOKEN
+}); 
 
-async function main() {
-  const response = await octokit.request('GET /users/ceciliab97/repos');
-  // Save the data to the root of your project so the browser can fetch it
-  fs.writeFileSync('./json/repos.json', JSON.stringify(response.data, null, 2));
-  console.log("Successfully created repos.json");
+async function run() {
+  try {
+    const response = await octokit.request('GET /users/ceciliab97/repos?per_page=100');
+    
+    // FILTERING LOGIC: Only keep what you need for the website
+    const cleanRepos = response.data.map(repo => ({
+      name: repo.name,
+      description: repo.description,
+      html_url: repo.html_url,
+      language: repo.language,
+      stargazers_count: repo.stargazers_count,
+      updated_at: repo.updated_at
+    }));
+
+    const dir = './json';
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+
+    // Save only the CLEAN version
+    fs.writeFileSync('./json/repos.json', JSON.stringify(cleanRepos, null, 2));
+    
+    console.log("Saved cleaned repos.json");
+  } catch (error) {
+    console.error("Fetch failed:", error.message);
+  }
 }
 
-main();
+run();
