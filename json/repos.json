@@ -93,14 +93,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 1,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 575655023,
@@ -196,14 +201,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 1,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 1117777654,
@@ -274,7 +284,7 @@
     "deployments_url": "https://api.github.com/repos/ceciliaB97/ceciliab97.github.io/deployments",
     "created_at": "2025-12-16T19:54:24Z",
     "updated_at": "2025-12-16T19:54:29Z",
-    "pushed_at": "2025-12-17T20:58:10Z",
+    "pushed_at": "2025-12-18T05:28:47Z",
     "git_url": "git://github.com/ceciliaB97/ceciliab97.github.io.git",
     "ssh_url": "git@github.com:ceciliaB97/ceciliab97.github.io.git",
     "clone_url": "https://github.com/ceciliaB97/ceciliab97.github.io.git",
@@ -299,14 +309,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 445329814,
@@ -402,14 +417,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 4,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 367731284,
@@ -505,14 +525,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 367235553,
@@ -608,14 +633,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 1,
     "watchers": 1,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 271369635,
@@ -717,14 +747,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "master"
+    "default_branch": "master",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 394488407,
@@ -838,7 +873,14 @@
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "master"
+    "default_branch": "master",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 794745731,
@@ -944,7 +986,14 @@
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 362663566,
@@ -1040,14 +1089,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 1,
     "open_issues": 0,
     "watchers": 1,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 367239234,
@@ -1143,14 +1197,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "master"
+    "default_branch": "master",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 455382661,
@@ -1246,14 +1305,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 3,
     "watchers": 0,
-    "default_branch": "master"
+    "default_branch": "master",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 364440530,
@@ -1349,14 +1413,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 1,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 367731806,
@@ -1452,14 +1521,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 419496146,
@@ -1555,14 +1629,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 367220336,
@@ -1658,14 +1737,19 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   },
   {
     "id": 769271725,
@@ -1761,13 +1845,18 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-
-    ],
+    "topics": [],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "master"
+    "default_branch": "master",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    }
   }
 ]
