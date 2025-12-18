@@ -1,0 +1,41 @@
+name: Fetch GitHub Data
+
+on:
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
+  push:
+    branches: [ dev ] # Runs every time you push to the dev branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Granting write permissions so the bot can commit the JSON file back to the repo
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install @octokit/core
+
+      - name: Run Fetcher Script
+        env:
+          # This must match process.env.MY_GITHUB_TOKEN in your JS
+          MY_GITHUB_TOKEN: ${{ secrets.GITHUBPAGE_TOKEN }} 
+        run: node js/fetchRepos.js
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add repos.json
+          # The '|| exit 0' prevents the action from failing if there are no new changes
+          git commit -m "Update repos.json with latest GitHub data" || exit 0
+          git push

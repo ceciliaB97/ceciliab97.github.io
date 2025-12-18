@@ -1,0 +1,9 @@
+
+#indexSection div {
+    border: 1px solid grey;
+    border-radius: 5px;
+    /* top right bottom left */
+    padding: 20px;
+    margin: 5px;
+    width: 75%;
+}

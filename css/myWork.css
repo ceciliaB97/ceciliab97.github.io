@@ -1,0 +1,46 @@
+#reposListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between the rectangles */
+    width: 75%;
+    margin-top: 20px;
+}
+
+.repo-card {
+    /* Wide rectangle dimensions */
+    width: 100%;
+    min-height: 140px; 
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.repo-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.repo-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.repo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.repo-tag {
+    background: #f0f0f0;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}

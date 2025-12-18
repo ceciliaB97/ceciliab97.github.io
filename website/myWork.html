@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    </head>
-<body>
-	<header>
-		<span>ceciliab97</span>
-		<nav>
-			<a class="navItem" href="index.html">Home</a> 
-			<a class="navItem" href="about.html">About me</a>  
-			<a class="navItem" href="#">My work</a>
-		</nav>
-	</header>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/myWork.css" />
+  </head>
+  <body>
+    <header>
+      <span>ceciliab97</span>
+      <nav>
+        <a class="navItem" href="index.html">Home</a>
+        <a class="navItem" href="about.html">About me</a>
+        <a class="navItem" href="#">My work</a>
+      </nav>
+    </header>
     <!--content-->
-	<!-- import repositories from github api -->
+    <!-- import repositories from github api -->
+    <section>
+      <h2>My repositories</h2>
+      <p>View my current repositories</p>
+
+      <div id="reposListContainer"></div>
+
+      <div id="scrollAnchor" style="height: 10px"></div>
+    </section>
     <footer>
-		<span>&copy; 2025 My portfolio</span>
-		<span><a href="#">LinkedIn</a><a href="#">GitHub</a></span>
-	</footer>
-    <script src="../js/script.js"></script>
-</body>
+      <span>&copy; 2025 My portfolio</span>
+      <span><a href="#">LinkedIn</a><a href="#">GitHub</a></span>
+    </footer>
+    <script type="module" src="../js/myWork.js"></script>
+  </body>
 </html>
