@@ -1,4 +1,4 @@
-- usar api de github para obtener repositorios actuales "curl -X GET https://api.github.com/users/<myuser>/repos?per_page=100"
+- usar api de github para obtener repositorios actuales "curl -X GET https://api.github.com/users/<myuser>/repos?per_page=100" (DONE)
 - usar api de linkedin para obtener informacion de perfil "https://medium.com/@prakrutipathak/fetch-data-from-linkedin-using-linkedin-api-d2b62280b46d"
-- los archivos importados iran a la carpeta "imports"
+- los archivos importados iran a la carpeta "json"
 - la informacion personal seran top sports, top hobbies, top games en formato json
