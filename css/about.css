@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     width: 75%;
 }
 
@@ -25,6 +25,41 @@
     align-items: flex-end;
 }
 
+#persListsWrapperDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 75%;
+}
 
+#sportsWrapperDiv {
+    float:left;
+}
+
+#hobbiesWrapperDiv {
+    float: right;
+}
+
+#sportsWrapperDiv #hobbiesWrapperDiv {
+    width: 50%;
+}
+
+.activities-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.activity-header {
+    width: 80%;
+}
+
+.activity-aside {
+    width: 20%;
+}
 
 

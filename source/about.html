@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="../css/about.css" />
-  </head>
-  <body>
-    <header>
-      <span>ceciliab97</span>
-      <nav>
-        <a class="navItem" href="index.html">Home</a>
-        <a class="navItem" href="#">About me</a>
-        <a class="navItem" href="myWork.html">My work</a>
-      </nav>
-    </header>
-    <section id="profPersSection" class="center">
-      <div id="profPersTitleDiv">
-        <span><h1>About me</h1></span>
-        <div id="profPersBtnDiv">
-          <button id="persBtn" onclick="showPersInfo()">Go personal</button
-          ><button id="profBtn" onclick="showProfInfo()">
-            Stay professional
-          </button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="../css/about.css" />
+</head>
+
+<body>
+  <header>
+    <span>ceciliab97</span>
+    <nav>
+      <a class="navItem" href="index.html">Home</a>
+      <a class="navItem" href="#">About me</a>
+      <a class="navItem" href="myWork.html">My work</a>
+    </nav>
+  </header>
+  <section id="profPersSection" class="center">
+    <div id="profPersTitleDiv">
+      <span>
+        <h1>About me</h1>
+      </span>
+      <div id="profPersBtnDiv">
+        <button id="persBtn" onclick="showPersInfo()">Go personal</button><button id="profBtn" onclick="showProfInfo()">
+          Stay professional
+        </button>
       </div>
-      <div id="aboutMeDiv1">
-        <img src="../images/avatar.webp" alt="Italian Trulli" />
-        <div id="profDiv">
-          <p>
-            1 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora
-            torquent per conubia nostra inceptos himenaeos.
-          </p>
-          <div>
-            <!-- import linkedin info from imports -->
-          </div>
-        </div>
-        <div id="persDiv">
-          <p>
-            2 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora
-            torquent per conubia nostra inceptos himenaeos.
-          </p>
-          <div>
-            <!-- import personal info from imports -->
-          </div>
-        </div>
+    </div>
+    <div id="aboutMeDiv1">
+      <img src="../images/avatar.webp" alt="Italian Trulli" />
+      <div id="profDiv">
+        <p>
+          1 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+          hendrerit semper vel class aptent taciti sociosqu. Ad litora
+          torquent per conubia nostra inceptos himenaeos.
+        </p>
+
       </div>
-    </section>
-    <footer>
-      <span>&copy; 2025 My portfolio</span>
-      <span><a href="#">LinkedIn</a><a href="#">GitHub</a></span>
-    </footer>
-    <script src="../js/about.js"></script>
-  </body>
+      <!--<div>
+        import linkedin info from imports 
+      </div>-->
+      <div id="persDiv">
+        <p>
+          2 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+          hendrerit semper vel class aptent taciti sociosqu. Ad litora
+          torquent per conubia nostra inceptos himenaeos.
+        </p>
+      </div>
+    </div>
+    <div id="persListsWrapperDiv">
+      <!-- import personal info -->
+      <div id="sportsWrapperDiv">
+        <h2>Sports</h2>
+        <div id="sportsListContainer"></div>
+          <!-- sports -->
+        <div id="sportsScrollAnchor" style="height: 10px"></div>
+      </div>
+      <div id="hobbiesWrapperDiv">
+        <h3>Hobbies</h3>
+        <div id="hobbiesListContainer"></div>
+          <!-- hobbies -->
+        <div id="hobbiesSrollAnchor" style="height: 10px"></div>
+      </div>
+    </div>
+
+
+  </section>
+  <footer>
+    <span>&copy; 2025 My portfolio</span>
+    <span><a href="#">LinkedIn</a><a href="#">GitHub</a></span>
+  </footer>
+  <script src="../js/about.js"></script>
+</body>
+
 </html>
