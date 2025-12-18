@@ -4,6 +4,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     width: 75%;
+    height: 280px;
 }
 
 #profPersTitleDiv {
@@ -14,8 +15,8 @@
 }
 
 #aboutMeDiv1 img {
-    width: 25%;
-    height: 25%;
+    width: 250px;
+    height: 250px;
 }
 
 #profPersBtnDiv {
@@ -34,32 +35,50 @@
 }
 
 #sportsWrapperDiv {
-    float:left;
+    float: left;
 }
 
 #hobbiesWrapperDiv {
-    float: right;
+    float: hidden;
 }
 
 #sportsWrapperDiv #hobbiesWrapperDiv {
-    width: 50%;
+    /*width: 50%;*/
 }
 
 .activities-card {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px solid grey;
-    border-radius: 4px;
-    margin: 5px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 200px;
+    width: 400px;
+}
+
+.activities-card:hover {
+    background-color: grey;
 }
 
 .activity-header {
-    width: 80%;
+    /*width: 80%;*/
+    /* top right bottom left */
+    padding: 5px 10px 5px 10px;
 }
 
-.activity-aside {
-    width: 20%;
+.activity-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.activity-aside img {
+    /*width: 20%;*/
+    object-fit: cover;
+    width: 50px;
+    height: 200px;
 }
 
 

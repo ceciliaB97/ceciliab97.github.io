@@ -1,13 +1,12 @@
 #reposListContainer {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Space between the rectangles */
+    gap: 25px; 
     width: 75%;
     margin-top: 20px;
 }
 
 .repo-card {
-    /* Wide rectangle dimensions */
     width: 100%;
     min-height: 140px; 
     border: 1px solid grey;
@@ -27,7 +26,6 @@
 
 .repo-header h3 {
     margin: 0;
-    font-size: 1.2rem;
     color: #333;
 }
 
@@ -42,7 +40,6 @@
     background: #f0f0f0;
     padding: 3px 10px;
     border-radius: 12px;
-    font-size: 0.8rem;
 }
 
 span {

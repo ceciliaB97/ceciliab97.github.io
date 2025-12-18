@@ -59,14 +59,14 @@ function loadNextSportsBatch() {
     const card = document.createElement("div");
     card.className = "activities-card";
     card.innerHTML = `
-            <div class="activity-header">
-                <h4>${activity.name}</h4>
-                <p>${activity.description}</p>
-            </div>
             <div class="activity-aside">
                 <span class="repo-img">
                     <img src="${activity.image}" alt="${activity.name}">
                 </span>                
+            </div>
+            <div class="activity-header">
+                <h4>${activity.name}</h4>
+                <p>${activity.description}</p>
             </div>
         `;
     container.appendChild(card);
@@ -112,15 +112,16 @@ function loadNextHobbiesBatch() {
     const card = document.createElement("div");
     card.className = "activities-card";
     card.innerHTML = `
-            <div class="activity-header">
-                <h4>${activity.name}</h4>
-                <p>${activity.description}</p>
-            </div>
             <div class="activity-aside">
                 <span class="repo-img">
                     <img src="${activity.image}" alt="${activity.name}">
                 </span>                
+            </div>        
+            <div class="activity-header">
+                <h4>${activity.name}</h4>
+                <p>${activity.description}</p>
             </div>
+            
         `;
     container.appendChild(card);
   });
