@@ -16,3 +16,18 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# Jekyll/GitHub Pages (Original)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+/vendor
+Gemfile.lock
+
+# Node.js (Nuevo)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
