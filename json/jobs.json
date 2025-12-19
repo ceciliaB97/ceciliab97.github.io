@@ -1,0 +1,39 @@
+[
+  {
+    "company": "Institución Financiera",
+    "role": "Programadora",
+    "period": "August 2024 - Present",
+    "location": "Uruguay",
+    "description": "Desarrollo y mantenimiento de aplicaciones de software de gestión utilizando tecnologías como Visual Net, ASP, HTML, CSS, JavaScript, Java y Workflows, sobre bases de datos SQL Server. Trabajo en un entorno altamente informatizado e interconectado, brindando soporte a clientes internos y externos. Participación en la gestión de servidores de aplicaciones y bases de datos en plataformas Windows y Linux, utilizando virtualización con VMWare. Apoyando en mejorar la eficiencia y automatización de procesos para mejorar continuamente la infraestructura de TI."
+  },
+  {
+    "company": "Universidad",
+    "role": "Web Developer",
+    "period": "September 2022 - April 2024 (1 year 8 months)",
+    "location": "Uruguay",
+    "description": "Web development with Java EE, JSP, Servlets and application servers, as well as HTML, CSS, JavaScript and SQL, JUnit. Use of security standards with OWASP, CVSS, and manage Linux servers, GNU bash, tomcat servers."
+  },
+  {
+    "company": "Tata Consultancy Services",
+    "role": "Analyst CBO Customer Service",
+    "period": "August 2020 - May 2022 (1 year 10 months)",
+    "location": "From Uruguay remotely for Canada",
+    "description": "First line of contact with customers in English for IT support, resolution of problems and services. Efficient team work and interpersonal skills. Virtual Desktop Infraestructure handling. Compilation of requirements according to the user. Carrying out required reports to communicate between other teams. Efficient teamwork and support."
+  },
+  {
+  },
+  {
+    "company": "Tata Consultancy Services",
+    "role": "Application Support Specialist",
+    "period": "May 2022 - October 2022 (6 months)",
+    "location": "From Uruguay remotely for Canada",
+    "description": "Resolution of incidents coming from level 1 of support. Management and maintenance of applications and services with SQL Server databases, servers, Azure Devops, automated processes. Improvements in support processes and applications. Contact with external suppliers.  "
+  },
+  {
+    "company": "Plan Ceibal",
+    "role": "Introduction to Programming Tutor",
+    "period": "March 2020 - June 2020 (4 months)",
+    "location": "Uruguay",
+    "description": "Virtual tutoring in the educational program of Plan Ceibal 'Youth to program' of Introduction to Programming and Computational Thinking with dynamic tools and languages such as JavaScript and Ruby."
+  }
+]
