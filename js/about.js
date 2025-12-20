@@ -6,9 +6,9 @@ let sports = [];
 let hobbies = [];
 
 const ICONS = {
-  work: `...`, // el que ya tienes
-  education: `...`, // el que ya tienes
-  activity: `<svg viewBox="0 0 16 16"><path d="M9.5 0a.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V.5a.5.5 0 0 1 .5-.5h3ZM8 3.5a.5.5 0 0 0-1 0V5H2.5A1.5 1.5 0 0 0 1 6.5v7A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 13.5 5H9V3.5ZM9 5h4.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V14a.5.5 0 0 0 1 0V5Z"></path></svg>`,
+  work: `<svg viewBox="0 0 16 16"><path d="M1.5 2.5A1.5 1.5 0 013 1h10a1.5 1.5 0 011.5 1.5v8A1.5 1.5 0 0113 12h-1.077c.101.21.191.432.268.665l.39 1.169a.75.75 0 01-.71.986H4.129a.75.75 0 01-.71-.986l.39-1.169c.077-.233.167-.455.268-.665H3A1.5 1.5 0 011.5 10.5v-8zm1.5 0v8h10v-8H3zm3.129 9.5a3.804 3.804 0 00-.312 1h5.366c-.08-.347-.184-.68-.312-1H6.129z"></path></svg>`,
+  education: `<svg viewBox="0 0 16 16"><path d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.5 9.931a3.73 3.73 0 011.503-.681h3.748V2.5h-2.756c-.646 0-1.312.329-1.745.851a.75.75 0 01-1.153 0c-.433-.522-1.099-.851-1.745-.851H3.5v8.5h3.748a3.73 3.73 0 011.503.681l.749.749.749-.749z"></path></svg>`,
+  activity: `<svg viewBox="0 0 16 16"><path d="M9.504 1.176a.75.75 0 01.157.81L7.531 6.5h3.719a.75.75 0 01.583 1.221l-6 7.5a.75.75 0 01-1.245-.831L6.712 9H3a.75.75 0 01-.583-1.221l6-7.5a.75.75 0 011.087-.103z"></path></svg>`,
   heart: `<svg viewBox="0 0 16 16"><path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z"></path></svg>`
 };
 
@@ -80,7 +80,7 @@ function loadNextSportsBatch() {
   next.forEach((item) => {
     const cardWrapper = document.createElement("div");
     // Usamos 'work' temporalmente para el ícono si no has definido uno nuevo
-    cardWrapper.innerHTML = createCardHTML("work", item.name, item.level, "", item.description);
+    cardWrapper.innerHTML = createCardHTML("activity", item.name, item.level, "", item.description);
     container.appendChild(cardWrapper);
   });
   currentSportstIndex += BATCH_SIZE;
@@ -117,7 +117,7 @@ function loadNextHobbiesBatch() {
   next.forEach((item) => {
     const cardWrapper = document.createElement("div");
     // Mismo formato que la profesional para que herede el CSS
-    cardWrapper.innerHTML = createCardHTML("work", item.name, "Hobby", "", item.description);
+    cardWrapper.innerHTML = createCardHTML("heart", item.name, "", "", item.description);
     container.appendChild(cardWrapper);
   });
   currentHobbiestIndex += BATCH_SIZE;

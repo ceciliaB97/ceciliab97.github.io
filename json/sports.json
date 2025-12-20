@@ -2,16 +2,16 @@
     {
         "name": "Cycling",
         "description": "Using it as transport or going for a ride is very thrilling, feeling the air while sliding through the road and looking at a nice scenary is a good experience.",
-        "image": "../images/bicycle.PNG"
+        "level": ""
     },
     {
         "name": "Swimming",
         "description": "Getting a good swim or just feeling the water before or after a typical day is a very relaxing activity, even after an intense training session.",
-        "image": "../images/bicycle.PNG"
+        "level": ""
     },
     {
         "name": "Brazilian Jiu Jitsu",
         "description": "Commitment to a long lasting sport such as Martial Arts enriches the body, mind and gives a feeling of community among training partners.",
-        "image": "../images/bicycle.PNG"
+        "level": "Blue Belt"
     }
 ]
