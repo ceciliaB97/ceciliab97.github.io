@@ -1,11 +1,11 @@
 [
   {
-    "company": "Institución Financiera",
-    "role": "Programadora",
+    "company": "Financial Institution",
+    "role": "Programmer",
     "period": "August 2024 - Present",
     "location": "Uruguay",
-    "description": "Desarrollo y mantenimiento de aplicaciones de software de gestión utilizando tecnologías como Visual Net, ASP, HTML, CSS, JavaScript, Java y Workflows, sobre bases de datos SQL Server. Trabajo en un entorno altamente informatizado e interconectado, brindando soporte a clientes internos y externos. Participación en la gestión de servidores de aplicaciones y bases de datos en plataformas Windows y Linux, utilizando virtualización con VMWare. Apoyando en mejorar la eficiencia y automatización de procesos para mejorar continuamente la infraestructura de TI."
-  },
+    "description": "Development and maintenance of management software applications using technologies such as Visual Net, ASP, HTML, CSS, JavaScript, Java, and Workflows, on SQL Server databases. I work in a highly computerized and interconnected environment, providing support to internal and external clients. Participation in the management of application servers and databases on Windows and Linux platforms, using virtualization with VMWare. Supporting the improvement of process efficiency and automation to continuously improve the IT infrastructure."
+},
   {
     "company": "Universidad",
     "role": "Web Developer",
