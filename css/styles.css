@@ -1,144 +1,167 @@
 :root {
-    --bg-main: #0d1117;
-    --bg-card: #161b22;
-    --border-color: #30363d;
-    --text-primary: #f0f6fc;
-    --text-secondary: #8b949e;
-    --accent: #58a6ff;
+  --bg-main: #0d1117;
+  --bg-card: #161b22;
+  --border-color: #30363d;
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --accent: #58a6ff;
 }
 
 body {
-    background-color: var(--bg-main);
-    color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background-color: var(--bg-main);
-    border-bottom: 1px solid var(--border-color);
-    position: sticky;
-    top: 0;
-    z-index: 9999 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 9999 !important;
 }
 
 .logo {
-    font-weight: 600;
-    font-size: 1.2rem;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #e1f4ff, #588dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Efecto degradado moderno */
+  display: inline-block;
+}
+
+.logo:hover {
+  color: var(--accent);
 }
 
 header nav {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 header nav a {
-    text-decoration: none;
-    color: var(--text-primary);
-    font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 0.9rem;
 }
 
 header nav a:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 /* Menú Hamburguesa Logic */
-#menu-check { display: none; }
+#menu-check {
+  display: none;
+}
 
 .hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-    z-index: 10000 !important;
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10000 !important;
 }
 
 .hamburger span {
-    width: 25px;
-    height: 2px;
-    background-color: var(--text-primary);
-    transition: 0.3s;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: 0.3s;
 }
 
 /* Footer compacto */
 footer {
-    border-top: 1px solid var(--border-color);
-    padding: 15px 0; /* Altura reducida */
-    text-align: center;
-    margin-top: auto; /* Empuja el footer al final */
+  border-top: 1px solid var(--border-color);
+  padding: 15px 0; /* Altura reducida */
+  text-align: center;
+  margin-top: auto; /* Empuja el footer al final */
 }
 
 footer span {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    line-height: 1.4;
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  padding-bottom: 10px;
 }
 
 .footer-links {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .footer-links a {
-    margin: 0 10px;
-    color: var(--accent);
-    text-decoration: none;
+  margin: 0 10px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-icon {
+    width: 24px; /* Un poquito más grandes para que sean fáciles de tocar */
+    height: 24px;
+    fill: var(--text-secondary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon:hover {
+    fill: var(--accent);
+    transform: translateY(-3px) scale(1.1);
 }
 
 /* Responsivo para Tablet y Celular */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex !important; /* Cambiado a flex para alinear las rayitas */
-        flex-direction: column;
-        gap: 5px;
-        z-index: 10001 !important;
-        cursor: pointer;
-    }
+  .hamburger {
+    display: flex !important; /* Cambiado a flex para alinear las rayitas */
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10001 !important;
+    cursor: pointer;
+  }
 
-header nav {
-display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        
-        /* SOLUCIÓN AL CORTE: box-sizing */
-        box-sizing: border-box; 
-        
-        background-color: var(--bg-main);
-        flex-direction: column;
-        
-        /* Alineamos el contenido a la derecha */
-        align-items: flex-end; 
-        padding: 20px 5%; /* 5% de respiro a los costados */
-        
-        border-bottom: 1px solid var(--border-color);
-        z-index: 10000;
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
 
-        
-    }
+    /* SOLUCIÓN AL CORTE: box-sizing */
+    box-sizing: border-box;
 
-    header nav a {
-        text-align: right;
-        width: 100%;
-        padding: 12px 0;
-        font-size: 1.1rem;
-    }
+    background-color: var(--bg-main);
+    flex-direction: column;
 
-    header nav a:last-child {
-        border-bottom: none;
-    }
+    /* Alineamos el contenido a la derecha */
+    align-items: flex-end;
+    padding: 20px 5%; /* 5% de respiro a los costados */
 
-    /* Mostrar menú al hacer clic en la hamburguesa */
-    #menu-check:checked ~ nav {
-        display: flex;
-    }
+    border-bottom: 1px solid var(--border-color);
+    z-index: 10000;
+  }
+
+  header nav a {
+    text-align: right;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+
+  header nav a:last-child {
+    border-bottom: none;
+  }
+
+  /* Mostrar menú al hacer clic en la hamburguesa */
+  #menu-check:checked ~ nav {
+    display: flex;
+  }
 }
