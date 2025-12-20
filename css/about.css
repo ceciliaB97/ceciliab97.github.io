@@ -95,11 +95,11 @@
 }
 
 .experience-box .list-item-card {
-  background-color: rgba(88, 166, 255, 0.08);
+  border-left: 4px solid rgba(88, 166, 255, 0.3);
 }
 
 .education-box .list-item-card {
-  background-color: rgba(187, 128, 255, 0.08);
+  border-left: 4px solid rgba(128, 198, 255, 0.3);
 }
 
 #persDiv .info-grid {
@@ -279,18 +279,9 @@
 }
 
 #sportsListContainer .list-item-card {
-  border-left: 4px solid #2ea043; /* Verde para deportes */
+  border-left: 4px solid rgba(46, 160, 67, 0.4);
 }
 
 #hobbiesListContainer .list-item-card {
-  border-left: 4px solid #f08b5f; /* Naranja para hobbies */
-}
-
-#sportsListContainer .list-item-card {
-  background-color: rgba(
-    46,
-    160,
-    67,
-    0.08
-  ); /* Verde pastel suave para deportes */
+  border-left: 4px solid rgba(107, 160, 46, 0.4);
 }
