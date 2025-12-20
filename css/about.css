@@ -1,84 +1,296 @@
-#aboutMeDiv1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 75%;
-    height: 280px;
+/* Contenedor General */
+.section-container {
+  padding: 2rem 5%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* 1. Título y Switch */
 #profPersTitleDiv {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilo Switch (Segmented Control) */
+.toggle-container {
+  display: inline-flex;
+  background-color: #161b22; /* Fondo oscuro */
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.toggle-container button {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary); /* Gris legible pero apagado */
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.toggle-container button.active {
+  background-color: var(--accent);
+  color: darkgrey;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.2);
+}
+
+.toggle-container button:not(.active):hover {
+  color: var(--text-primary);
+  background-color: #21262d;
+}
+
+/* 2. Imagen y Bio */
+#aboutMeDiv1 {
+  display: flex;
+  flex-direction: column; /* Móvil: columna */
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+}
+
+/* 3. Tags (Skills) */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.tag-cloud span {
+  /* Suponiendo que insertas spans por JS */
+  background-color: #1f6feb24;
+  color: var(--accent);
+  border: 1px solid #388bfd66;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* 4. Grid de Listas (Experiencia/Educación) */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columna en móvil */
+  gap: 20px;
+  align-items: stretch; /* ESTO asegura que midan lo mismo de ancho */
+}
+
+/* Estilo de item de lista tipo GitHub Card */
+.list-card-container > div {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.experience-box .list-item-card {
+  background-color: rgba(88, 166, 255, 0.08);
+}
+
+.education-box .list-item-card {
+  background-color: rgba(187, 128, 255, 0.08);
+}
+
+#persDiv .info-grid {
+  gap: 20px;
+  align-items: start;
+}
+
+/* --- RESPONSIVE (Desktop/Tablet) --- */
+@media (min-width: 768px) {
+  #profPersTitleDiv {
     flex-direction: row;
     justify-content: space-between;
-    width: 75%;
-}
+    align-items: center;
+  }
 
-#aboutMeDiv1 img {
-    width: 250px;
-    height: 250px;
-}
+  #aboutMeDiv1 {
+    flex-direction: row; /* Lado a lado */
+    align-items: flex-start;
+  }
 
-#profPersBtnDiv {
-    display:flex;
-    flex-direction: row;
-    height: 50px;
-    align-items: flex-end;
-}
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 25px;
+    align-items: stretch; /* ESTO nivela las alturas */
+  }
 
-#persListsWrapperDiv {
+  /* Hacemos que una columna sea un poco más ancha que la otra para un look asimétrico moderno */
+  .experience-box {
+    flex: 1.2;
+  }
+  .education-box {
+    flex: 0.8;
+  }
+
+  .grid-item {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow: hidden;
-    width: 75%;
-}
+    flex-direction: column;
+  }
 
-#sportsWrapperDiv {
-    float: left;
-}
-
-#hobbiesWrapperDiv {
-    float: hidden;
-}
-
-#sportsWrapperDiv #hobbiesWrapperDiv {
-    /*width: 50%;*/
-}
-
-.activities-card {
-    border: 1px solid grey;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #ffffff;
+  .list-card-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
-    height: 200px;
-    width: 400px;
+    flex-direction: column;
+    gap: 1px; /* Espacio uniforme entre tarjetas */
+    margin-top: 15px;
+  }
+
+  #persDiv .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 30px;
+    align-items: stretch;
+  }
 }
 
-.activities-card:hover {
-    background-color: grey;
+/* Ajuste móvil específico para Educación primero */
+@media (max-width: 767px) {
+  .education-box {
+    order: 1;
+  }
+  .experience-box {
+    order: 2;
+  }
+
+  .toggle-container {
+    width: 209.5px;
+  }
 }
 
-.activity-header {
-    /*width: 80%;*/
-    /* top right bottom left */
-    padding: 5px 10px 5px 10px;
+.list-item-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #161b22; /* El color de fondo del bento */
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  pointer-events: auto !important; /* Arregla el hover */
+  margin-bottom: 15px;
 }
 
-.activity-header h3 {
-    margin: 0;
-    color: #333;
+.list-item-card:hover {
+  border-color: #8b949e;
+  background-color: #1c2128;
+  transform: translateX(4px);
 }
 
-.activity-aside img {
-    /*width: 20%;*/
-    object-fit: cover;
-    width: 50px;
-    height: 200px;
+.list-item-card * {
+  pointer-events: none; /* Hace que los hijos no roben el foco del mouse a la tarjeta */
 }
 
+.icon-container {
+  width: 32px;
+  height: 32px;
+  background-color: #30363d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
 
+.icon-container svg {
+  width: 16px;
+  height: 16px;
+  fill: #8b949e;
+}
+
+.card-text-content {
+  pointer-events: auto; /* Pero permitimos que el texto sea seleccionable si se desea */
+}
+
+.card-text-content h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #f0f6fc;
+}
+
+.additional-text {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#profBtn {
+  border-radius: 6px 0 0 6px; /* Redondeado solo a la izquierda */
+}
+
+#persBtn {
+  border-radius: 0 6px 6px 0; /* Redondeado solo a la derecha */
+}
+
+#experience-list,
+#education-list,
+#sportsListContainer,
+#hobbiesListContainer {
+  pointer-events: auto !important;
+}
+
+.list-item-card {
+  pointer-events: auto !important;
+}
+
+.cert-tag {
+  /* Base igual a las tarjetas pero en formato pequeño */
+  background-color: rgba(255, 215, 0, 0.1); /* Amarillo pastel muy suave */
+  color: var(--text-primary);
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  /* Animación y Hover igual a las listas */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  pointer-events: auto !important;
+}
+
+.cert-tag:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  border-color: #f1c40f; /* Color oro/amarillo más fuerte */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sportsListContainer,
+#hobbiesListContainer {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna por defecto */
+  gap: 1px;
+  width: 100%;
+  pointer-events: auto !important;
+}
+
+#sportsListContainer .list-item-card {
+  border-left: 4px solid #2ea043; /* Verde para deportes */
+}
+
+#hobbiesListContainer .list-item-card {
+  border-left: 4px solid #f08b5f; /* Naranja para hobbies */
+}
+
+#sportsListContainer .list-item-card {
+  background-color: rgba(
+    46,
+    160,
+    67,
+    0.08
+  ); /* Verde pastel suave para deportes */
+}

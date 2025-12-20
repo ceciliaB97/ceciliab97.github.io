@@ -1,84 +1,80 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="../css/about.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/about.css" />
 </head>
-
 <body>
-  <header>
-    <span>ceciliab97</span>
-    <nav>
-      <a class="navItem" href="index.html">Home</a>
-      <a class="navItem" href="#">About me</a>
-      <a class="navItem" href="myWork.html">My work</a>
-    </nav>
-  </header>
-  <section id="profPersSection" class="center">
-    <div id="profPersTitleDiv">
-      <span>
+    <header>
+      <span class="logo">ceciliab97</span>
+      <input type="checkbox" id="menu-check">
+      <label for="menu-check" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <nav>
+        <a class="navItem" href="index.html">Home</a>
+        <a class="navItem" href="about.html">About me</a>
+        <a class="navItem" href="myWork.html">My work</a>
+      </nav>
+    </header>
+
+    <main class="center section-container">
+      <div id="profPersTitleDiv">
         <h1>About me</h1>
-      </span>
-      <div id="profPersBtnDiv">
-        <button id="persBtn" onclick="showPersInfo()">Go personal</button><button id="profBtn" onclick="showProfInfo()">
-          Stay professional
-        </button>
+        <div class="toggle-container">
+          <button id="profBtn" class="active" onclick="showProfInfo()">Professional</button>
+          <button id="persBtn" onclick="showPersInfo()">Personal</button>
+        </div>
       </div>
-    </div>
-    <div id="aboutMeDiv1">
-      <img src="../images/avatar.webp" alt="Italian Trulli" />
+
+      <div id="aboutMeDiv1">
+        <img src="../images/avatar.webp" alt="Avatar" class="profile-img" />
+        <div id="summaryText">
+          <p>I’m an IT Analyst who likes cybersecurity with experience in web development...</p>
+          <p>I enjoy communicating in different languages, including English and Spanish...</p>
+        </div>
+      </div>
+
       <div id="profDiv">
-        <p>
-          1 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora
-          torquent per conubia nostra inceptos himenaeos.
-        </p>
+        <div class="skills-section">
+          <h3>Certifications</h3>
+          <div id="certifications-tags" class="tag-cloud"></div>
+        </div>
 
+        <div class="info-grid">
+          <div class="grid-item education-box">
+            <h3>Education</h3>
+            <div id="education-list" class="list-card-container"></div>
+          </div>
+          <div class="grid-item experience-box">
+            <h3>Experience</h3>
+            <div id="experience-list" class="list-card-container"></div>
+          </div>
+        </div>
       </div>
-      <!--<div>
-        import linkedin info from imports 
-      </div>-->
-      <div id="persDiv">
-        <p>
-          2 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora
-          torquent per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-    </div>
-    <div id="persListsWrapperDiv">
-      <!-- import personal info -->
-      <div id="sportsWrapperDiv">
-        <h2>Sports</h2>
-        <div id="sportsListContainer"></div>
-          <!-- sports -->
-        <div id="sportsScrollAnchor" style="height: 10px"></div>
-      </div>
-      <div id="hobbiesWrapperDiv">
-        <h2>Hobbies</h2>
-        <div id="hobbiesListContainer"></div>
-          <!-- hobbies -->
-        <div id="hobbiesSrollAnchor" style="height: 10px"></div>
-      </div>
-    </div>
 
+      <div id="persDiv" style="display: none;">
+        <div class="info-grid">
+          <div class="grid-item">
+            <h3>Sports</h3>
+            <div id="sportsListContainer" class="list-card-container"></div>
+            <div id="sportsScrollAnchor" style="height: 1px;"></div>
+          </div>
+          <div class="grid-item">
+            <h3>Hobbies</h3>
+            <div id="hobbiesListContainer" class="list-card-container"></div>
+            <div id="hobbiesScrollAnchor" style="height: 1px;"></div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  </section>
-  <footer>
-    <span>&copy; 2025 My portfolio</span>
-    <span><a href="#">LinkedIn</a><a href="#">GitHub</a></span>
-  </footer>
-  <script src="../js/about.js"></script>
+    <footer>
+      <span>&copy; 2025 My portfolio</span>
+      <span class="footer-links"><a href="#">LinkedIn</a><a href="#">GitHub</a></span>
+    </footer>
+    <script src="../js/about.js"></script>
 </body>
-
 </html>
