@@ -94,3 +94,14 @@
   height: 16px;
   fill: #8b949e;
 }
+
+/* Estilo Bento con color para Repos */
+.item-blue {
+    border-left: 4px solid var(--accent) !important;
+    background-color: rgba(88, 166, 255, 0.05) !important;
+}
+
+.item-blue:hover {
+    background-color: rgba(88, 166, 255, 0.1) !important;
+    border-color: var(--accent);
+}

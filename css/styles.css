@@ -27,7 +27,7 @@ header {
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 9999 !important;
 }
 
 .logo {
@@ -58,6 +58,7 @@ header nav a:hover {
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
+    z-index: 10000 !important;
 }
 
 .hamburger span {
@@ -94,19 +95,46 @@ footer span {
 
 /* Responsivo para Tablet y Celular */
 @media (max-width: 768px) {
-    .hamburger { display: flex; }
-
-    header nav {
-        display: none; /* Oculto por defecto */
+    .hamburger {
+        display: flex !important; /* Cambiado a flex para alinear las rayitas */
         flex-direction: column;
+        gap: 5px;
+        z-index: 10001 !important;
+        cursor: pointer;
+    }
+
+header nav {
+display: none;
         position: absolute;
         top: 100%;
-        right: 0;
-        background-color: var(--bg-card);
-        width: 200px;
-        padding: 20px;
-        border: 1px solid var(--border-color);
-        box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        left: 0;
+        width: 100%;
+        
+        /* SOLUCIÓN AL CORTE: box-sizing */
+        box-sizing: border-box; 
+        
+        background-color: var(--bg-main);
+        flex-direction: column;
+        
+        /* Alineamos el contenido a la derecha */
+        align-items: flex-end; 
+        padding: 20px 5%; /* 5% de respiro a los costados */
+        
+        border-bottom: 1px solid var(--border-color);
+        z-index: 10000;
+
+        
+    }
+
+    header nav a {
+        text-align: right;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+
+    header nav a:last-child {
+        border-bottom: none;
     }
 
     /* Mostrar menú al hacer clic en la hamburguesa */

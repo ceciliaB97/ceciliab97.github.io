@@ -33,7 +33,7 @@ function loadNextBatch() {
 
   nextRepos.forEach((repo) => {
     const card = document.createElement("a"); // Convertimos la tarjeta entera en un link
-    card.className = "repo-card";
+    card.className = "repo-card item-blue";
     card.href = repo.html_url;
     card.target = "_blank";
     
