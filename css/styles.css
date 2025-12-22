@@ -39,7 +39,6 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Efecto degradado moderno */
   display: inline-block;
-  text-decoration: none;
 }
 
 .logo:hover {
