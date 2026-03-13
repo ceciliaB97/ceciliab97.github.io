@@ -1,36 +1,36 @@
 [
-    {
-    "company": "Financial Institution headquartered abroad",
+  {
+    "company": "Financial Institution",
     "role": "Programmer",
     "period": "August 2024 - Present",
     "location": "Uruguay",
-    "description": "Maintenance and development of internal client software in many areas, using technologies such as .Net, ASP, HTML, CSS, JavaScript, Java and SQL Server databases on different environments. Creation of workflows through process design and analysis. Collaboration with regulatory entities. Server management with Windows and Linux operating systems. Monitoring of the network infrastructure, such as switches, servers, and hosts with software tools such as Zabbix."
+    "description": "Development and maintenance of management software applications using technologies such as Visual Net, ASP, HTML, CSS, JavaScript, Java, and Workflows, on SQL Server databases. I work in a highly computerized and interconnected environment, providing support to internal and external clients. Participation in the management of application servers and databases on Windows and Linux platforms, using virtualization with VMWare. Supporting the improvement of process efficiency and automation to continuously improve the IT infrastructure."
   },
   {
-    "company": "University",
+    "company": "Universidad",
     "role": "Web Developer",
-    "period": "September 2022 - April 2024",
+    "period": "September 2022 - April 2024 (1 year 8 months)",
     "location": "Uruguay",
     "description": "Web development with Java EE, JSP, Servlets and application servers, as well as HTML, CSS, JavaScript and SQL, JUnit. Use of security standards with OWASP, CVSS, and manage Linux servers, GNU bash, tomcat servers."
   },
   {
     "company": "Tata Consultancy Services",
     "role": "Application Support Specialist",
-    "period": "May 2022 - October 2022",
+    "period": "May 2022 - October 2022 (6 months)",
     "location": "From Uruguay remotely for Canada",
     "description": "Resolution of incidents coming from level 1 of support. Management and maintenance of applications and services with SQL Server databases, servers, Azure Devops, automated processes. Improvements in support processes and applications. Contact with external suppliers."
   },
   {
     "company": "Tata Consultancy Services",
     "role": "Analyst CBO Customer Service",
-    "period": "August 2020 - May 2022",
+    "period": "August 2020 - May 2022 (1 year 10 months)",
     "location": "From Uruguay remotely for Canada",
     "description": "First line of contact with customers in English for IT support, resolution of problems and services. Efficient team work and interpersonal skills. Virtual Desktop Infraestructure handling. Compilation of requirements according to the user. Carrying out required reports to communicate between other teams. Efficient teamwork and support."
   },
   {
     "company": "Plan Ceibal",
     "role": "Introduction to Programming Tutor",
-    "period": "March 2020 - June 2020",
+    "period": "March 2020 - June 2020 (4 months)",
     "location": "Uruguay",
     "description": "Virtual tutoring in the educational program of Plan Ceibal 'Youth to program' of Introduction to Programming and Computational Thinking with dynamic tools and languages such as JavaScript and Ruby."
   }
