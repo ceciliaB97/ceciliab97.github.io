@@ -54,3 +54,8 @@
   border-left: 4px solid rgba(88, 166, 255, 0.3);
 
 }
+
+.logo a {
+  text-decoration: none;
+  color: inherit; /* Opcional: para que mantenga el color del texto heredado */
+}
