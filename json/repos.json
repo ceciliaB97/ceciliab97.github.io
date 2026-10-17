@@ -8,6 +8,14 @@
     "updated_at": "2023-01-28T04:45:40Z"
   },
   {
+    "name": "Algoritmos2",
+    "description": "Algoritmos 2 Obligatorio",
+    "html_url": "https://github.com/ceciliaB97/Algoritmos2",
+    "language": "Java",
+    "stargazers_count": 1,
+    "updated_at": "2026-10-17T13:36:31Z"
+  },
+  {
     "name": "blog",
     "description": null,
     "html_url": "https://github.com/ceciliaB97/blog",
@@ -21,7 +29,7 @@
     "html_url": "https://github.com/ceciliaB97/ceciliab97.github.io",
     "language": "HTML",
     "stargazers_count": 1,
-    "updated_at": "2026-04-01T18:30:58Z"
+    "updated_at": "2026-10-17T13:25:20Z"
   },
   {
     "name": "curso-Angular6",
@@ -30,6 +38,22 @@
     "language": "TypeScript",
     "stargazers_count": 0,
     "updated_at": "2024-06-11T14:57:10Z"
+  },
+  {
+    "name": "DisenoDesarrolloAplicaciones-Obligatorio-1",
+    "description": "Programa para manejar con Java y Swing, un programa con interfaz de usuario que maneje proveedores, productos, comisiones y facturas.",
+    "html_url": "https://github.com/ceciliaB97/DisenoDesarrolloAplicaciones-Obligatorio-1",
+    "language": "Java",
+    "stargazers_count": 0,
+    "updated_at": "2026-10-17T13:37:00Z"
+  },
+  {
+    "name": "Entregable-1-AED2",
+    "description": null,
+    "html_url": "https://github.com/ceciliaB97/Entregable-1-AED2",
+    "language": "Java",
+    "stargazers_count": 0,
+    "updated_at": "2026-10-17T13:37:25Z"
   },
   {
     "name": "FiftyGram2",
@@ -64,12 +88,36 @@
     "updated_at": "2023-01-28T04:45:39Z"
   },
   {
+    "name": "infra_oblig",
+    "description": "Obligatorio de Infraestructura",
+    "html_url": "https://github.com/ceciliaB97/infra_oblig",
+    "language": "Ada",
+    "stargazers_count": 0,
+    "updated_at": "2026-10-17T13:34:06Z"
+  },
+  {
     "name": "JupyterNotebook",
     "description": "This is the versioning of the my Jupyter notebook used for various types of data analysis, exploration, integration, cleansing, clustering and more.",
     "html_url": "https://github.com/ceciliaB97/JupyterNotebook",
     "language": "Jupyter Notebook",
     "stargazers_count": 0,
     "updated_at": "2024-05-11T14:44:00Z"
+  },
+  {
+    "name": "OblgTallerDesarrolloMovil",
+    "description": null,
+    "html_url": "https://github.com/ceciliaB97/OblgTallerDesarrolloMovil",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "updated_at": "2026-10-17T13:35:32Z"
+  },
+  {
+    "name": "Obligatorio2-DDA",
+    "description": null,
+    "html_url": "https://github.com/ceciliaB97/Obligatorio2-DDA",
+    "language": "Java",
+    "stargazers_count": 0,
+    "updated_at": "2026-10-17T13:36:06Z"
   },
   {
     "name": "obligatorioBsDs1",
